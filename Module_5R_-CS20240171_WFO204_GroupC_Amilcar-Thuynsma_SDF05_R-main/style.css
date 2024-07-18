@@ -49,15 +49,53 @@ p {
         7px 7px 20px 0px rgba(0, 0, 0, .1),
         4px 4px 5px 0px rgba(0, 0, 0, .1);
     outline: none;
-    transition: all 0.5s ease-in;
 }
 
 /* Add your custom styles for btn-1, btn-2, and btn-3 */
-.btn-1:hover {
-    letter-spacing: 0.25em;
-    padding: 30px 25px;
-    
+.btn-1{
+    letter-spacing: 0.1em;
+    border: 2px solid #de33e0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 
+}
+
+.btn-1:hover {
+    background-color: #de33e0;
+    color: #fff;
+    box-shadow: 0 0 5px #de33e0,
+                 0 0 25px  #de33e0,
+                 0 0 50px #de33e0,
+                 0 0 200px #de33e0;
+}
+
+@keyframes glow { 
+    0% {
+        box-shadow: 0 0 10px #de33e0,
+                    0 0 20px #de33e0,
+                    0 0 30px #de33e0,
+                    0 0 40px #de33e0;
+}
+    50% {
+        box-shadow: 0 0 5px #de33e0,
+                    0 0 15px #de33e0,
+                    0 0 25px #de33e0,
+                    0 0 35px #de33e0;
+            }
+     100% {
+        box-shadow: 0 0 10px #de33e0,
+                    0 0 20px #de33e0,
+                    0 0 30px #de33e0,
+                    0 0 40px #de33e0;
+}
+     }       
+
+
+
+
+
+
+
+.btn-2:hover{
 
 
 }
