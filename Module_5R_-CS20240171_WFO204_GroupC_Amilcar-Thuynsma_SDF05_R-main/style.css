@@ -51,10 +51,11 @@ p {
     outline: none;
 }
 
-/* custom styles for btn-1 */
+/* custom styles for button 1 */
 .btn-1{
     letter-spacing: 0.1em;
     border: 2px solid #de33e0;
+    color: #de33e0;
     transition: background-color 0.3s ease, color 0.3s ease;
 
 }
@@ -90,12 +91,55 @@ p {
      }       
 
 
+/* Custom styles for button 2*/
+.btn-2 {
 
+position: relative;
+width: 130px;
+height: 40px;
+background-color: #fff;
+border: 2px solid aquamarine;
+overflow: hidden;
+}
 
+.btn-2::before, .btn-2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid aquamarine;
+    animation: slide 4s linear ;
+    border-radius: 10PX;
 
+}
 
+.btn-2::before {
+    top: -2PX;
+    left: -2PX;
+    animation-delay: 0S;
+}
 
-.btn-2:hover{
+.btn-2::after{
+    bottom: -2px;
+    right: -2px;
+    animation-delay: 2s;
 
-
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    75% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateY(0%)
+    }
 }
