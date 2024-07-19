@@ -98,6 +98,7 @@ position: relative;
 width: 130px;
 height: 40px;
 background-color: #fff;
+color: aquamarine;
 border: 2px solid aquamarine;
 overflow: hidden;
 }
@@ -109,7 +110,7 @@ overflow: hidden;
     height: 100%;
     background-color: transparent;
     border: 2px solid aquamarine;
-    animation: slide 4s linear ;
+    animation: slide 4s linear infinite;
     border-radius: 10PX;
 
 }
@@ -142,4 +143,56 @@ overflow: hidden;
     100% {
         transform: translateY(0%)
     }
+}
+.btn-3 {
+    background-color: plum;
+    line-height: 42px;
+    padding: 0%;
+    border: none;
+    position: relative;
+    display: block;
+    width: 130px;
+    height: 40px;;
+    color: #fff;
+}
+
+.btn-3::before,.btn-3::after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 1PX;
+    box-shadow: 
+        -1px -1px 20px 0px #fff,
+        -4px -4px 5px 0px #fff, 
+        7px 7px 20px 0px #000,
+        4PX 4PX 5PX 0PX #000;
+
+}
+
+.btn-3::before { 
+    right: 0%;
+    top: 0%;
+    transition: all 500ms ease;
+}
+
+.btn-3::after {
+    left: 0%;
+    bottom: 0%;
+    transition: all 500ms ease;
+}
+
+.btn-3:hover {
+    background: transparent;
+    color: #76aef1;
+    box-shadow: none;
+}
+
+.btn-3:hover::before {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-3:hover::after {
+    transition: all 500ms ease;
+    height: 100%;
 }
