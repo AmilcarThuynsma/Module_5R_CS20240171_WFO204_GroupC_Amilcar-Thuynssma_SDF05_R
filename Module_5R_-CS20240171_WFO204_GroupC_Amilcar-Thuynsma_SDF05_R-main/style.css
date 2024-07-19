@@ -98,8 +98,8 @@ position: relative;
 width: 130px;
 height: 40px;
 background-color: #fff;
-color: aquamarine;
-border: 2px solid aquamarine;
+color: rgba(228, 162, 248, 0.826);
+border: 2px solid rgba(228, 162, 248, 0.826);
 overflow: hidden;
 }
 
@@ -109,7 +109,7 @@ overflow: hidden;
     width: 100%;
     height: 100%;
     background-color: transparent;
-    border: 2px solid aquamarine;
+    border: 2px solid rgba(228, 162, 248, 0.826);
     animation: slide 4s linear infinite;
     border-radius: 10PX;
 
@@ -144,6 +144,8 @@ overflow: hidden;
         transform: translateY(0%)
     }
 }
+
+/* Custom styles for button 3*/
 .btn-3 {
     background-color: plum;
     line-height: 42px;
@@ -183,7 +185,7 @@ overflow: hidden;
 
 .btn-3:hover {
     background: transparent;
-    color: #76aef1;
+    color: plum;
     box-shadow: none;
 }
 
